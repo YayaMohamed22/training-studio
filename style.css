@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: min(80%, 1200px);
+    margin-inline: auto;
+}
+
+
+header {
+    background-color: #fff;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.2);
+}
+
+.desktop-menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.desktop-menu span {
+    color: orangered;
+}
+.desktop-menu h1 {
+    color: #2a2a2a;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.link-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.link-menu li {
+    list-style: none;
+}
+
+.link-menu li a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 1.4375rem;
+    font-weight: 500;
+}
+
+.btn {
+    background-color: #ed563b;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobil-menu {
+    display: none;
+}
+
+.easy {
+    height: calc(100vh - 5rem);
+   /* background: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)) ,url('https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;  */
+    display: flex;
+    background: linear-gradient(rgba(35, 45, 57, 0.1) , rgba(35, 45, 57, 0.1));   
+}
+
+video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+}
+
+.easy .work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.easy .work h2 {
+    font-size: 6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.easy .work span {
+    color: #ed563b;
+}
+.easy .work h6 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
+.choose-pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.choose-pro h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.choose-pro h2 span{
+    color: #ed563b;
+}
+
+.choose-pro img {
+    padding-top: 1.125rem;
+}
+
+.choose-pro p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7a7a7a;
+    padding-top: 1.125rem;
+}
+
+.info-boxs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block: 6rem;
+    gap: 5rem;
+}
+
+.info-boxs img {
+    width: 150px;
+    height: 150px;
+}
+
+.box {
+    display: flex;
+    gap: 2rem;
+}
+
+.box .basic h3 {
+    font-size: 1.8125rem;
+    font-weight: 700;
+    color: #232d39;
+}
+
+.box .basic p {
+    color: #7a7a7a;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+.box .basic span {
+    color: blue;
+    cursor: pointer;
+}
+
+.box .more  {
+    color: #ed563b;
+    text-decoration: none;
+    padding-top: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.box .more a {
+    color: #ed563b;
+    text-decoration: none;
+}
+
+.hero {
+    height: 438px;
+    background: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg') center/cover no-repeat ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero span {
+    color: #ed563b;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hero .member {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero .member a {
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 20px;
+    background-color: #ed563b;
+}
+
+.info-classe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-block: 6rem;
+}
+
+.flex-box {
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    max-width: 100%;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin: 1.25rem;
+    cursor: pointer;
+}
+
+.sub-flex {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.view {
+    text-align: center;
+    padding: 1.25rem 3.875rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    max-width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    background-color: #ed563b;
+    border: none;
+}
+
+.training img {
+    border-radius: 8px;
+}
+
+.training  h1{
+    font-size: 23px;
+    font-weight: 700;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.training p {
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-bottom: 28px;
+}
+
+#Schedule {
+    margin-left: 2px;
+}
+
+.profile {
+    background: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg') center/cover no-repeat;
+    height: 140vh;
+    margin-top: 6.5rem;
+    margin: 0 1rem;
+}
+
+.content-info {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile .content-info .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 6rem;
+}
+
+.content-info h2 {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.content-info span {
+    color: #ed563b;
+}
+
+.content-info p {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+.periode-gym {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.color-text {
+    color: #ed563b;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.periode-gym .color-secondary {
+    display: inline;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 23px;
+
+}
+
+.table-gym {
+    margin-top: 6rem;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+tbody {
+    border-top: 1px solid #fff;
+}
+
+tr {
+    border-top: 1px solid #fff;
+}
+
+table tr td {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+
+table tbody tr td {
+    border-right: 1px solid #fff;
+    height: 100px;
+}
+
+.expert-info {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.expert-info h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #232d39;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.expert-info span {
+    font-style: normal;
+    color: #ed563b;
+}
+
+.expert-info p {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: #7a7a7a;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem
+}
+
+.card {
+    min-width: 300px;
+    max-width: 450px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.cards h5 {
+    font-size: 15px;
+    color: #ed563b;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.card h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
+.card p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+.social-media-icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    margin-left: 20px;
+    cursor: pointer;
+    align-items: center;
+    gap: 15px;
+}
+
+.last-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 150px;
+}
+.map {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.card-information{
+    background: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-infom {
+    background-color: #fff;
+    padding: 40px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 600px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.card-info4 {
+    display: flex;
+        gap: 1rem
+}
+.card-info4 input {
+    width: 240px;
+    height: 40px;
+    padding: 0px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #7a7a7a;
+    outline: none;
+    font-size: 17px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.form-infor {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.subjet {
+    width: 500px;
+    height: 40px;
+    padding: 0px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #7a7a7a;
+    outline: none;
+    font-size: 17px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 500px;
+    height: 260px;
+    appearance: none;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #7a7a7a;
+    outline: none;
+    font-size: 17px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.send-message {
+    display: inline-block;
+    font-size: 13px;
+    padding: 11px 17px;
+    background-color: #ed563b;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .3s;
+    border: none;
+    outline: none;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+
+footer p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #232d39;
+    line-height: 25px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+footer span {
+    color: #ed563b;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    .desktop-menu {
+        display: none;
+    }
+    
+    header {
+        height: 0;
+    }
+
+    i {
+        z-index: 11111;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: blue;
+        color: #000000;
+        top: 4%;
+        right: 5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 2rem;
+    }
+
+    .mobil-menu{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background-color: #FAFAF6;
+        color: black;
+        inset: 0 0 0 0;
+        transform: translateX(0%);
+        transition: transform 350ms ease-in-out;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobil-menu[data-visible="false"] {
+        transform: translateX(100%);
+    }
+
+    .hamburger i[data-visible="true"]{
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"]{
+        display: none;
+    }
+
+    .mobil-menu .navigation{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+    .mobil-menu .navigation .link-menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .link-menu li {
+        list-style: none;
+    }
+
+    .link-menu li a {
+        text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.0625rem;
+    cursor: pointer
+    }
+
+    .btn-sign {
+        padding: 1rem 13rem;
+        background-color: #ed563b;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+    .easy{
+        height: 100vh;
+    }
+
+   /* video {
+        width: 100%;
+    }*/
+
+    .easy h2{
+        font-size: 3rem;
+        margin-left: 50px;
+    }
+
+    .info-boxs {
+        grid-template-columns: 1fr;
+    }
+
+    .box .basic h3 {
+        font-size: 20px;
+        gap:5px;
+    }
+
+    .box .basic p{
+        font-size: 15px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .choose-pro p {
+        font-size: 13px;
+    }
+
+    .info-classe {
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    .training p {
+        font-size: 16px;
+    }
+
+    .content-info p {
+        font-size: 13px;
+    }
+
+    .periode-gym {
+        width: 90%;
+    }
+
+   /* .color-text {
+        font-size: 18px;
+    }
+
+    .color-secondary {
+        font-size: 11px;
+    }*/
+
+    table {
+        width: 90%;
+    }
+
+    table tr td {
+        font-size: 13px;
+    }
+
+    .expert-info p {
+        font-size: 13px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards p {
+        font-size: 21px;
+    }
+
+    .last-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-infom {
+        width: 88%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
